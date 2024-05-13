@@ -101,3 +101,7 @@ SimpleSpy ❌ (Attempted to call nil value)<br>
 **FAQ:** <br>
 Why does it freeze when I click execute? <br>
 Its just loading, wait around a minute max and your script should be loaded<br>
+
+**Note**<br>
+You can make your own celery exploit right now<br>
+https://www.youtube.com/watch?v=82u6qf7zn68<br>
