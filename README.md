@@ -53,6 +53,8 @@ Infinite yield <br>
 ```lua
 loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
 ```
+![image](https://github.com/rebl0x/Celery-supported-scripts/assets/169552876/6dd93df4-e15c-4b63-b894-4ca54c2a74a7)
+
 
 Dex v2 <br>
 ```lua
