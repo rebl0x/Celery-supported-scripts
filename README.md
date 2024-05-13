@@ -89,6 +89,11 @@ loadstring(game:httpGet("https://raw.githubusercontent.com/TERIHAX/Scripts/main/
 ```
 ![image](https://github.com/rebl0x/Celery-supported-scripts/assets/169552876/2365f615-31d7-41a9-bedd-d09970b3f7fc)
 
+Fe Animations GUI <br>
+```lua
+loadstring(game:HttpGet("https://raw.githubusercontent.com/rebl0x/Scripts/main/Fe%20Animations"))()
+```
+![image](https://github.com/rebl0x/Celery-supported-scripts/assets/169552876/afb98b68-e4f5-44b0-8801-214ae91a8a1c)
 
 
 
