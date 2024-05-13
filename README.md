@@ -69,6 +69,7 @@ Dex V4 ❌ (no getobjects support)<br>
 Dex V5 ❌ (Loadstring: failed)<br>
 SecureDarkDexV3 ❌ (Attempted to call nil value)<br>
 SentinelDex ❌ (Loadstring: Failed<br>
+Unnamed ESP ❌ (This might just be a error on my client since ive seen it run on celery before)
 
 **FAQ:** <br>
 Why does it freeze when I click execute? <br>
