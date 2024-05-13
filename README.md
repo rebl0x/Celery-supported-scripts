@@ -92,7 +92,11 @@ Dex V4 ❌ (no getobjects support)<br>
 Dex V5 ❌ (Loadstring: failed)<br>
 SecureDarkDexV3 ❌ (Attempted to call nil value)<br>
 SentinelDex ❌ (Loadstring: Failed<br>
-Unnamed ESP ❌ (This might just be a error on my client since ive seen it run on celery before)
+Unnamed ESP ❌ (This might just be a error on my client since ive seen it run on celery before)<br>
+Game Rejoin script ❌ (Causes roblox to crash)<br>
+MrSpy ❌ (Loadstring: failed)<br>
+Remote2Script❌ (Loadstring: failed)<br>
+SimpleSpy ❌ (Attempted to call nil value)<br>
 
 **FAQ:** <br>
 Why does it freeze when I click execute? <br>
