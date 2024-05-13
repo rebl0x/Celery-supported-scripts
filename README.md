@@ -62,6 +62,29 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/tickwares/loadstringt
 ```
 ![image](https://github.com/rebl0x/Celery-supported-scripts/assets/169552876/080db141-5285-4f05-ab22-9d74a9960f14)
 
+Btools <br>
+```lua
+backpack = game:GetService("Players").LocalPlayer.Backpack
+
+hammer = Instance.new("HopperBin")
+hammer.Name = "Hammer"
+hammer.BinType = 4
+hammer.Parent = backpack
+
+cloneTool = Instance.new("HopperBin")
+cloneTool.Name = "Clone"
+cloneTool.BinType = 3
+cloneTool.Parent = backpack
+
+grabTool = Instance.new("HopperBin")
+grabTool.Name = "Grab"
+grabTool.BinType = 2
+grabTool.Parent = backpack
+```
+![image](https://github.com/rebl0x/Celery-supported-scripts/assets/169552876/0057ebaf-f25e-48ab-b79e-3ad29228491c)
+
+
+
 **Unsupported scripts**<br>
 Dex V1 ❌ (no getobjects support)<br>
 Dex V3 ❌ (no getobjects support)<br>
