@@ -4,4 +4,6 @@ Without using Custom UNC script, here is a list of loadstrings celery can run by
 **Scripts** <br>
 Infinte yield <br>
 
+```lua
 loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+```
