@@ -45,7 +45,7 @@ local game = setmetatable({}, {
 
 
 **Scripts** <br>
-Infinte yield <br>
+Infinite yield <br>
 
 ```lua
 loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
