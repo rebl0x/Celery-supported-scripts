@@ -2,6 +2,7 @@
 Without using Custom UNC script, here is a list of loadstrings celery can run by default.<br>
 Unless your custom celery has the auto detect loadstring, then use the code below to run loadstrings, add it to the top before the loadstring <br>
 ```lua
+--Credits to len
 function httpget(url)
     local d,ise,Body=false,false,""
     game:GetService("HttpService"):RequestInternal({Url = url,Method = "GET"}):Start(function(suc, res) if not suc then Body = res.StatusCode ise = true d=true return end Body=res.Body d=true end)
