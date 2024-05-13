@@ -1,6 +1,7 @@
 # Celery-supported-scripts
 Without using Custom UNC script, here is a list of loadstrings celery can run by default.<br>
 Unless your custom celery has the auto detect loadstring, then use the code below to run loadstrings, add it to the top before the loadstring <br>
+
 ```lua
 --Credits to len
 function httpget(url)
@@ -52,3 +53,7 @@ Infinite yield <br>
 ```lua
 loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
 ```
+
+**FAQ:**
+Why does it freeze when I click execute? <br>
+Its just loading, wait around a minute max and your script should be loaded<br>
