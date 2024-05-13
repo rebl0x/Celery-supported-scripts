@@ -2,6 +2,8 @@
 Without using Custom UNC script, here is a list of loadstrings celery can run by default.<br>
 Unless your custom celery has the auto detect loadstring, then use the code below to run loadstrings, add it to the top before the loadstring <br>
 
+Celery by default is context 3, but you can download a context 7 file. Im not sure it makes a difference since it lacks UNC support as of now <br>
+
 ```lua
 --Credits to len
 function httpget(url)
