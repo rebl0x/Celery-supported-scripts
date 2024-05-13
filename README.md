@@ -58,6 +58,8 @@ Dex v2 <br>
 ```lua
 loadstring(game:HttpGet("https://raw.githubusercontent.com/tickwares/loadstringtest/main/dexs"))()
 ```
+![image](https://github.com/rebl0x/Celery-supported-scripts/assets/169552876/080db141-5285-4f05-ab22-9d74a9960f14)
+
 
 **FAQ:** <br>
 Why does it freeze when I click execute? <br>
