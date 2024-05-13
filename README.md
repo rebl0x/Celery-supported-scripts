@@ -56,7 +56,7 @@ loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/
 
 Dex v2 <br>
 ```lua
-loadstring(game:HttpGet(\"https://raw.githubusercontent.com/tickwares/loadstringtest/main/dexs\"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/tickwares/loadstringtest/main/dexs"))()
 ```
 
 **FAQ:** <br>
