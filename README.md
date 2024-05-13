@@ -97,6 +97,7 @@ Game Rejoin script ❌ (Causes roblox to crash)<br>
 MrSpy ❌ (Loadstring: failed)<br>
 Remote2Script❌ (Loadstring: failed)<br>
 SimpleSpy ❌ (Attempted to call nil value)<br>
+CMD-X ❌ (Attempted to call nil value)<br>
 
 **FAQ:** <br>
 Why does it freeze when I click execute? <br>
