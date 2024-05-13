@@ -54,6 +54,6 @@ Infinite yield <br>
 loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
 ```
 
-**FAQ:**
+**FAQ:** <br>
 Why does it freeze when I click execute? <br>
 Its just loading, wait around a minute max and your script should be loaded<br>
