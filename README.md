@@ -42,6 +42,7 @@ local game = setmetatable({}, {
         return oldGame[v]
     end
 })
+--loadstring goes here
 ```
 
 
