@@ -83,6 +83,13 @@ grabTool.Parent = backpack
 ```
 ![image](https://github.com/rebl0x/Celery-supported-scripts/assets/169552876/0057ebaf-f25e-48ab-b79e-3ad29228491c)
 
+ShatterVast Admin <br>
+```lua
+loadstring(game:httpGet("https://raw.githubusercontent.com/TERIHAX/Scripts/main/Universal/Admin%20Scripts/ShatterVast.lua"))()
+```
+![image](https://github.com/rebl0x/Celery-supported-scripts/assets/169552876/2365f615-31d7-41a9-bedd-d09970b3f7fc)
+
+
 
 
 **Unsupported scripts**<br>
