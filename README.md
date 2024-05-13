@@ -63,12 +63,12 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/tickwares/loadstringt
 ![image](https://github.com/rebl0x/Celery-supported-scripts/assets/169552876/080db141-5285-4f05-ab22-9d74a9960f14)
 
 **Unsupported scripts**<br>
-Dex V1 ❌ (no getobjects support)
-Dex V3 ❌ (no getobjects support)
-Dex V4 ❌ (no getobjects support)
-Dex V5 ❌ (Loadstring: failed)
-SecureDarkDexV3 ❌ (Attempted to call nil value)
-SentinelDex ❌ (Loadstring: Failed
+Dex V1 ❌ (no getobjects support)<br>
+Dex V3 ❌ (no getobjects support)<br>
+Dex V4 ❌ (no getobjects support)<br>
+Dex V5 ❌ (Loadstring: failed)<br>
+SecureDarkDexV3 ❌ (Attempted to call nil value)<br>
+SentinelDex ❌ (Loadstring: Failed<br>
 
 **FAQ:** <br>
 Why does it freeze when I click execute? <br>
