@@ -97,6 +97,13 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/rebl0x/Scripts/main/F
 ```
 ![image](https://github.com/rebl0x/Celery-supported-scripts/assets/169552876/afb98b68-e4f5-44b0-8801-214ae91a8a1c)
 
+Teams based ESP <br>
+```lua
+loadstring(game:HttpGet("https://pastebin.com/raw/1UZ8Yynd"))()
+```
+![image](https://github.com/rebl0x/Celery-supported-scripts/assets/169552876/148d8817-8417-483e-9286-cc5cfcfecc46)
+
+
 
 
 **Unsupported scripts**<br>
