@@ -21,6 +21,8 @@ end
 ![image](https://github.com/rebl0x/Celery-supported-scripts/assets/169552876/86603369-5fab-4510-82f6-3f1edd86b845)
 
 
+Also, here is function for loadstring httpGet support <br>
+
 ```lua
 --Credits to len
 function httpget(url)
