@@ -137,7 +137,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/byteveil/celery-compa
 
 
 **Unsupported scripts**<br>
-Dex V1 ❌ (no getobjects support)<br>
+Dex V1 ❌ (Needs rewrite to work, doing that as of 14/05/2024)<br>
 Dex V3 ❌ (no getobjects support)<br>
 Dex V4 ❌ (no getobjects support)<br>
 Dex V5 ❌ (Loadstring: failed)<br>
