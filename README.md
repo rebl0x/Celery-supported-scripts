@@ -103,6 +103,17 @@ loadstring(game:HttpGet("https://pastebin.com/raw/1UZ8Yynd"))()
 ```
 ![image](https://github.com/rebl0x/Celery-supported-scripts/assets/169552876/148d8817-8417-483e-9286-cc5cfcfecc46)
 
+Caeser admin <br>
+```lua
+loadstring(game:HttpGet("https://raw.githubusercontent.com/byteveil/celery-compatible-scripts/main/scripts/caeser-admin.lua"))()
+```
+![image](https://github.com/rebl0x/Celery-supported-scripts/assets/169552876/191c5279-2a35-4f25-8849-22985cc8670f)
+
+Simple admin <br>
+```lua
+loadstring(game:HttpGet("https://raw.githubusercontent.com/byteveil/celery-compatible-scripts/main/scripts/simple-admin.lua"))()
+```
+![image](https://github.com/rebl0x/Celery-supported-scripts/assets/169552876/1df5c3af-5d42-4f0d-8e31-fa2cff8848b3)
 
 
 
