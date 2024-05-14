@@ -4,6 +4,22 @@ Unless your custom celery has the auto detect loadstring, then use the code belo
 
 Celery by default is context 3, but you can download a context 7 file. Im not sure it makes a difference since it lacks UNC support as of now <br>
 
+**Supported UI libs** <br>
+This is still wip, but ive added Rayfield now so thats good <br>
+Any existing script that uses rayfield will need a patch, so replace the "Local Rayfield = loadstring()" with below <br>
+```lua
+local Rayfield = loadstring(game:HttpGet("https://raw.githubusercontent.com/rebl0x/Scripts/main/rayfield%20test.lua"))()
+```
+
+Also put this above the loadstring, Its support for getobjects <br>
+```lua
+function getobjects(a1) 
+    return { game:GetService("InsertService"):LoadLocalAsset(a1) }
+end
+```
+![image](https://github.com/rebl0x/Celery-supported-scripts/assets/169552876/86603369-5fab-4510-82f6-3f1edd86b845)
+
+
 ```lua
 --Credits to len
 function httpget(url)
