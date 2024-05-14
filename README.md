@@ -5,6 +5,7 @@ Unless your custom celery has the auto detect loadstring, then use the code belo
 Celery by default is context 3, but you can download a context 7 file. Im not sure it makes a difference since it lacks UNC support as of now <br>
 
 **Supported UI libs** <br>
+Rayfield ✅ <br>
 This is still wip, but ive added Rayfield now so thats good <br>
 Any existing script that uses rayfield will need a patch, so replace the "Local Rayfield = loadstring()" with below <br>
 ```lua
