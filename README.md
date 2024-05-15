@@ -1,28 +1,24 @@
-# Celery-supported-scripts
-Without using Custom UNC script, here is a list of loadstrings celery can run by default.<br>
-Unless your custom celery has the auto detect loadstring, then use the code below to run loadstrings, add it to the top before the loadstring <br>
+# Celery-Supported Scripts
 
-Celery by default is context 3, but you can download a context 7 file. Im not sure it makes a difference since it lacks UNC support as of now <br>
+Without using a custom UNC script, here is a list of loadstrings Celery can run by default. Unless your custom Celery has auto-detect loadstring, use the code below to run loadstrings. Add it to the top before the loadstring.
 
-**Supported UI libs** <br>
-Rayfield ✅ <br>
-This is still wip, but ive added Rayfield now so thats good <br>
-Any existing script that uses rayfield will need a patch, so replace the "Local Rayfield = loadstring()" with below <br>
-```lua
-local Rayfield = loadstring(game:HttpGet("https://raw.githubusercontent.com/rebl0x/Scripts/main/rayfield%20test.lua"))()
-```
+Celery by default is context 3, but you can download a context 7 file. I'm not sure it makes a difference since it lacks UNC support as of now.
 
-Also put this above the loadstring, Its support for getobjects <br>
-```lua
-function getobjects(a1) 
-    return { game:GetService("InsertService"):LoadLocalAsset(a1) }
-end
-```
+**Supported UI Libs**
+- Rayfield ✅
+  - This is still a WIP, but I've added Rayfield now, so that's good. Any existing script that uses Rayfield will need a patch, so replace the `Local Rayfield = loadstring()` with the code below:
+    ```lua
+    local Rayfield = loadstring(game:HttpGet("https://raw.githubusercontent.com/rebl0x/Scripts/main/rayfield%20test.lua"))()
+    ```
+  - Also, put this above the loadstring. It's support for getobjects:
+    ```lua
+    function getobjects(a1) 
+        return { game:GetService("InsertService"):LoadLocalAsset(a1) }
+    end
+    ```
 ![image](https://github.com/rebl0x/Celery-supported-scripts/assets/169552876/86603369-5fab-4510-82f6-3f1edd86b845)
 
-
-Also, here is function for loadstring httpGet support <br>
-
+Also, here is the function for loadstring httpGet support:
 ```lua
 --Credits to len
 function httpget(url)
@@ -43,7 +39,7 @@ if not getgenv().currGame then
     getgenv().currGame = game
 end
 local oldGame = getgenv().currGame
---Script orignally by 
+--Script originally by
 local game = setmetatable({}, {
     __index = function(t,v)
         if v == "HttpGet" then
@@ -67,96 +63,91 @@ local game = setmetatable({}, {
 --loadstring goes here
 ```
 
-
-**Scripts** <br>
-Infinite yield <br>
-
-```lua
-loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
-```
+**Scripts**
+- Infinite Yield
+  ```lua
+  loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+  ```
 ![image](https://github.com/rebl0x/Celery-supported-scripts/assets/169552876/6dd93df4-e15c-4b63-b894-4ca54c2a74a7)
 
-
-Dex v2 <br>
-```lua
-loadstring(game:HttpGet("https://raw.githubusercontent.com/tickwares/loadstringtest/main/dexs"))()
-```
+- Dex v2
+  ```lua
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/tickwares/loadstringtest/main/dexs"))()
+  ```
 ![image](https://github.com/rebl0x/Celery-supported-scripts/assets/169552876/080db141-5285-4f05-ab22-9d74a9960f14)
 
-Btools <br>
-```lua
-backpack = game:GetService("Players").LocalPlayer.Backpack
+- Btools
+  ```lua
+  backpack = game:GetService("Players").LocalPlayer.Backpack
 
-hammer = Instance.new("HopperBin")
-hammer.Name = "Hammer"
-hammer.BinType = 4
-hammer.Parent = backpack
+  hammer = Instance.new("HopperBin")
+  hammer.Name = "Hammer"
+  hammer.BinType = 4
+  hammer.Parent = backpack
 
-cloneTool = Instance.new("HopperBin")
-cloneTool.Name = "Clone"
-cloneTool.BinType = 3
-cloneTool.Parent = backpack
+  cloneTool = Instance.new("HopperBin")
+  cloneTool.Name = "Clone"
+  cloneTool.BinType = 3
+  cloneTool.Parent = backpack
 
-grabTool = Instance.new("HopperBin")
-grabTool.Name = "Grab"
-grabTool.BinType = 2
-grabTool.Parent = backpack
-```
+  grabTool = Instance.new("HopperBin")
+  grabTool.Name = "Grab"
+  grabTool.BinType = 2
+  grabTool.Parent = backpack
+  ```
 ![image](https://github.com/rebl0x/Celery-supported-scripts/assets/169552876/0057ebaf-f25e-48ab-b79e-3ad29228491c)
 
-ShatterVast Admin <br>
-```lua
-loadstring(game:httpGet("https://raw.githubusercontent.com/TERIHAX/Scripts/main/Universal/Admin%20Scripts/ShatterVast.lua"))()
-```
+- ShatterVast Admin
+  ```lua
+  loadstring(game:httpGet("https://raw.githubusercontent.com/TERIHAX/Scripts/main/Universal/Admin%20Scripts/ShatterVast.lua"))()
+  ```
 ![image](https://github.com/rebl0x/Celery-supported-scripts/assets/169552876/2365f615-31d7-41a9-bedd-d09970b3f7fc)
 
-Fe Animations GUI <br>
-```lua
-loadstring(game:HttpGet("https://raw.githubusercontent.com/rebl0x/Scripts/main/Fe%20Animations"))()
-```
+- Fe Animations GUI
+  ```lua
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/rebl0x/Scripts/main/Fe%20Animations"))()
+  ```
 ![image](https://github.com/rebl0x/Celery-supported-scripts/assets/169552876/afb98b68-e4f5-44b0-8801-214ae91a8a1c)
 
-Teams based ESP <br>
-```lua
-loadstring(game:HttpGet("https://pastebin.com/raw/1UZ8Yynd"))()
-```
+- Teams Based ESP
+  ```lua
+  loadstring(game:HttpGet("https://pastebin.com/raw/1UZ8Yynd"))()
+  ```
 ![image](https://github.com/rebl0x/Celery-supported-scripts/assets/169552876/148d8817-8417-483e-9286-cc5cfcfecc46)
 
-Caeser admin <br>
-```lua
-loadstring(game:HttpGet("https://raw.githubusercontent.com/byteveil/celery-compatible-scripts/main/scripts/caeser-admin.lua"))()
-```
+- Caesar Admin
+  ```lua
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/byteveil/celery-compatible-scripts/main/scripts/caeser-admin.lua"))()
+  ```
 ![image](https://github.com/rebl0x/Celery-supported-scripts/assets/169552876/191c5279-2a35-4f25-8849-22985cc8670f)
 
-Simple admin <br>
-```lua
-loadstring(game:HttpGet("https://raw.githubusercontent.com/byteveil/celery-compatible-scripts/main/scripts/simple-admin.lua"))()
-```
+- Simple Admin
+  ```lua
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/byteveil/celery-compatible-scripts/main/scripts/simple-admin.lua"))()
+  ```
 ![image](https://github.com/rebl0x/Celery-supported-scripts/assets/169552876/1df5c3af-5d42-4f0d-8e31-fa2cff8848b3)
 
+**Unsupported Scripts**
+- Dex V1 ❌ (Needs rewrite to work, doing that as of 14/05/2024)
+- Dex V3 ❌ (no getobjects support)
+- Dex V4 ❌ (no getobjects support)
+- Dex V5 ❌ (Loadstring: failed)
+- SecureDarkDexV3 ❌ (Attempted to call nil value)
+- SentinelDex ❌ (Loadstring: Failed)
+- Unnamed ESP ❌ (This might just be an error on my client since I've seen it run on Celery before)
+- Game Rejoin Script ❌ (Causes Roblox to crash)
+- MrSpy ❌ (Loadstring: failed)
+- Remote2Script ❌ (Loadstring: failed)
+- SimpleSpy ❌ (Attempted to call nil value)
+- CMD-X ❌ (Attempted to call nil value)
+- RevizAdminV2 ❌ (Loadstring: Failed)
 
+**FAQ:**
+- Why does it freeze when I click execute? 
+  - It's just loading. Wait around a minute max and your script should be loaded.
 
-**Unsupported scripts**<br>
-Dex V1 ❌ (Needs rewrite to work, doing that as of 14/05/2024)<br>
-Dex V3 ❌ (no getobjects support)<br>
-Dex V4 ❌ (no getobjects support)<br>
-Dex V5 ❌ (Loadstring: failed)<br>
-SecureDarkDexV3 ❌ (Attempted to call nil value)<br>
-SentinelDex ❌ (Loadstring: Failed)<br>
-Unnamed ESP ❌ (This might just be a error on my client since ive seen it run on celery before)<br>
-Game Rejoin script ❌ (Causes roblox to crash)<br>
-MrSpy ❌ (Loadstring: failed)<br>
-Remote2Script❌ (Loadstring: failed)<br>
-SimpleSpy ❌ (Attempted to call nil value)<br>
-CMD-X ❌ (Attempted to call nil value)<br>
-RevizAdminV2❌(Loadstring: Failed)<br>
+**Note**
+- You can make your own Celery exploit right now.
+  [Link to YouTube Video](https://www.youtube.com/watch?v=82u6qf7zn68)
 
-**FAQ:** <br>
-Why does it freeze when I click execute? <br>
-Its just loading, wait around a minute max and your script should be loaded<br>
-
-**Note**<br>
-You can make your own celery exploit right now<br>
-https://www.youtube.com/watch?v=82u6qf7zn68<br>
-
-Repository maintained by _t38 <br>
+Repository maintained by _t38.
