@@ -1,8 +1,9 @@
 # Celery-Supported Scripts
 
-Without using a custom UNC script, here is a list of loadstrings Celery can run by default. Unless your custom Celery has auto-detect loadstring, use the code below to run loadstrings. Add it to the top before the loadstring.
+Without using a custom UNC script, here is a list of loadstrings Celery can run by default. Unless your custom Celery has auto-detect loadstring, use the code below to run loadstrings. Add it to the top before the loadstring. <br>
 
-Celery by default is context 3. UNC should be higher now, the main UNC script is broken so we have no way of knowing yet. 
+Celery by default is context 3. UNC should be higher now, the main UNC script is broken so we have no way of knowing yet. <br>
+(Removed Supported UI-Libs since it broke again and Ill have to re-write for the new celery update) <br>
 
 **Scripts**
 - Infinite Yield
