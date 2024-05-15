@@ -92,4 +92,4 @@ Celery by default is context 3. UNC should be higher now, the main UNC script is
 - You can make your own Celery exploit right now.
   [Link to YouTube Video](https://www.youtube.com/watch?v=82u6qf7zn68)
 
-Repository maintained by _t38.
+Repository maintained by _t38. (Contributions from byteveil)
