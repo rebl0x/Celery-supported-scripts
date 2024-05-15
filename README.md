@@ -2,66 +2,7 @@
 
 Without using a custom UNC script, here is a list of loadstrings Celery can run by default. Unless your custom Celery has auto-detect loadstring, use the code below to run loadstrings. Add it to the top before the loadstring.
 
-Celery by default is context 3, but you can download a context 7 file. I'm not sure it makes a difference since it lacks UNC support as of now.
-
-**Supported UI Libs**
-- Rayfield ✅
-  - This is still a WIP, but I've added Rayfield now, so that's good. Any existing script that uses Rayfield will need a patch, so replace the `Local Rayfield = loadstring()` with the code below:
-    ```lua
-    local Rayfield = loadstring(game:HttpGet("https://raw.githubusercontent.com/rebl0x/Scripts/main/rayfield%20test.lua"))()
-    ```
-  - Also, put this above the loadstring. It's support for getobjects:
-    ```lua
-    function getobjects(a1) 
-        return { game:GetService("InsertService"):LoadLocalAsset(a1) }
-    end
-    ```
-![image](https://github.com/rebl0x/Celery-supported-scripts/assets/169552876/86603369-5fab-4510-82f6-3f1edd86b845)
-
-Also, here is the function for loadstring httpGet support:
-```lua
---Credits to len
-function httpget(url)
-    local d,ise,Body=false,false,""
-    game:GetService("HttpService"):RequestInternal({Url = url,Method = "GET"}):Start(function(suc, res) if not suc then Body = res.StatusCode ise = true d=true return end Body=res.Body d=true end)
-    repeat task.wait() until d
-    if ise then error(Body, 0) end return Body
-end
-
-function getgenv()
-    return getfenv(2)
-end
-
-loadstring = getfenv().load_string
-getgenv().loadstring = loadstring
-
-if not getgenv().currGame then
-    getgenv().currGame = game
-end
-local oldGame = getgenv().currGame
---Script originally by
-local game = setmetatable({}, {
-    __index = function(t,v)
-        if v == "HttpGet" then
-            return function(_,url)
-                return httpget(url)
-            end
-        end
-        if v == "GetService" then
-            return function(_,a)
-                return oldGame:GetService(a)
-            end
-        end
-        if v == "FindService" then
-            return function(_,a)
-                return oldGame:FindService(a)
-            end
-        end
-        return oldGame[v]
-    end
-})
---loadstring goes here
-```
+Celery by default is context 3. UNC should be higher now, the main UNC script is broken so we have no way of knowing yet. 
 
 **Scripts**
 - Infinite Yield
